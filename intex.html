@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calc.css">
+    <title>calculator</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family:sans-serif;
+
+        }
+        body{
+            height: 400px;
+           
+            background-color:white;
+           place-items: center;
+            display: grid;
+            
+        }
+        .container{
+        height: 380px;
+        width: 283px;
+        border: 10px solid black;
+        border-radius: 4px;
+        position: relative;
+        }
+        .container input[type='test']{
+            height: 50px;
+            width: 250px;
+            border: 3px solid black;
+            margin: 6px 2px;
+            margin-left: 11px;
+            text-align: end;
+            font-size: 40px;
+            outline:none;
+            border-radius: 5px;
+          
+            
+
+        }
+        .container2 button  {
+            height: 50px;
+            width: 62px;
+            border: 2px solid black;
+           border-radius: 5px;
+            margin: 2px 3px;
+            margin-top: 8px;
+            background-color:  rgb(128, 128, 128);
+            font-size: 15px;
+            transition: 0.5s;
+            cursor: pointer;
+            color:white;
+            position: relative;
+          
+            
+
+        }
+        table button :hover{
+          background-color: black;
+          color:white ;
+        }
+      
+    
+    
+      
+
+      
+        
+      </style>
+</head>
+<body>
+<div class="container">
+     <input type="test" id='display'>
+
+ <div class="container2">
+     
+<table>
+  <tr>
+  
+   <td> <button onclick="calculator()"  class=" delete()">delete</button> </td> 
+  <td> <button onclick="btnpressed(this)" class=" 0">0</button> </td>        
+  <td> <button onclick="btnpressed(this)" class="%">% </button> </td>        
+  <td> <button onclick="btnpressed(this)" class="/">/</button> </td>
+  </tr>
+  
+  <tr>
+    <td>  <button onclick="btnpressed(this)" class="1">1</button> </td>
+    <td>  <button onclick="btnpressed(this)" class="2">2</button> </td>
+    <td>  <button onclick="btnpressed(this)" class="3">3</button> </td>
+    <td>  <button onclick="btnpressed(this)" class="*">*</button> </td>
+  </tr>
+  
+  <tr>
+   <td>  <button onclick="btnpressed(this)" class="4">4</button></td>
+      <td>   <button onclick="btnpressed(this)" class="5">5</button></td> 
+        <td>   <button onclick="btnpressed(this)" class="6">6</button> </td>
+          <td>  <button onclick="btnpressed(this)" class="-">-</button> </td>
+  </tr>
+  
+  <tr>
+    <td> <button onclick="btnpressed(this)" class="7">7</button> </td>
+      <td>  <button onclick="btnpressed(this)" class="8">8</button> </td>
+        <td>  <button onclick="btnpressed(this)" class="9">9</button> </td>
+          <td> <button onclick="btnpressed(this)" class="+">+</button> </td>
+  </tr>
+  
+  <tr>
+    <td> <button onclick="btnpressed(this)" class=".">.</button> </td>
+      <td> <button onclick="name()" class="clear()" >clear</button> </td>
+        <td> <button onclick="equval()" class="=">=</button></td> 
+        <td> <button onclick="btnpressed(this)"class="00">0</button> </td>
+</tr>
+ </table> 
+        </div>
+   
+
+    </div>
+    
+</body>
+<script src= "calculator.js"></script>
+</html>
